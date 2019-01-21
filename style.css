@@ -1,5 +1,5 @@
 .navbar-default {
-    background-color: #95A5A6;
+    background-color: rgb(248, 211, 107);
 }
 
 .navbar-default .navbar-brand {
@@ -14,6 +14,11 @@
     font-size: 1rem;
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+    color: grey;
+    background-color: black;
+}
+
 .navSecond {
     margin-top: 2.6%;
     background-color: rgb(114, 133, 134);
@@ -23,9 +28,66 @@
     font-size: 3rem;
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.iconColor {
+    color: rgb(238, 238, 20);
+}
+
+.iconColor2 {
+    color: rgb(105, 105, 102);
+}
+
+.iconColor3 {
+    color: rgb(21, 128, 62);
+}
+
+#country {
+    padding: 5px 130px 5px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(194, 189, 189);
+}
+
+.bgModal {
+    background-color: rgb(238, 231, 231);
+    padding-top: 30px;
+}
+
+#size {
+    padding: 5px 165px 5px 10px;
+    margin-left: 6%;
+    border-radius: 10px;
+    border: 1px solid rgb(194, 189, 189);
+}
+
+.modalSpan {
+    text-decoration: line-through;
+    color: grey;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.buttonModal {
+    background-color: rgb(140, 137, 148);
+    border: 2px solid rgb(105, 104, 112);
+    border-radius: 5px;
     color: white;
-    background-color: rgb(81, 91, 92);
+    width: 43%;
+    height: 50px;
+    font-size: 1.6rem;
+    margin-top: 30px;
+}
+
+.py-4 {
+    margin-left: 7%;
+}
+
+.py-6 {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.py-8 {
+    margin-top: 20rem;
+    padding: 20px 0 10px 0;
 }
 
 .navbar-default .navbar-nav>li>a:nth-child(1) {
@@ -50,7 +112,7 @@
     margin-top: 10%;
 }
 
-#carousel-example-generic {
+#carousel-example {
     height: 20vh;
 }
 
@@ -59,18 +121,26 @@
     font-size: 1.8rem;
 }
 
-.carousel-indicators li {
-    margin-bottom: -185px;
-    background-color: grey;
+.py-0 {
+    padding: 0;
 }
 
-.carousel-indicators .active {
+.py-7 {
+    padding-right: 10px;
+}
+
+#carousel-example .carousel-indicators li {
+    margin-bottom: -185px;
+    background-color: rgb(192, 153, 46);
+}
+
+#carousel-example .carousel-indicators .active {
     margin-bottom: -185px;
     background-color: black;
 }
 
 .greenSpan {
-    color: rgb(8, 182, 167);
+    color: rgb(192, 153, 46);
     font-weight: bold;
 }
 
@@ -80,8 +150,12 @@
 }
 
 .hr {
-    border: 2px solid rgb(8, 182, 167);
+    border: 2px solid rgb(192, 153, 46);
     width: 8%;
+}
+
+.logo {
+    font-size: 2rem;
 }
 
 .h3Testemonials {
@@ -89,8 +163,14 @@
     font-weight: bold;
 }
 
+.h1Main {
+    font-size: 10rem;
+    font-weight: bold;
+    color: rgb(248, 211, 107);
+}
+
 .bgContact {
-    background-image: url(2.jpg);
+    background: linear-gradient(rgba(110, 29, 147, 0.5), rgba(219, 35, 216, 0.5)), url(2.jpg);
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
@@ -98,10 +178,23 @@
 }
 
 .buttonSign {
-    background: rgba(203, 96, 179, 1);
-    border-radius: 30px;
+    border: 0px solid #7D99CA;
+    border-radius: 25px;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    color: #FFFFFF;
+    background-image: linear-gradient(to bottom, #876485, #FF57EE);
     color: white;
-    padding: 5px 75px 5px 75px;
+    padding: 5px 65px 5px 65px;
+}
+
+.buttonSecond {
+    border: none;
+    background-color: transparent;
+    margin-left: 12%;
 }
 
 .form-group input {
@@ -120,7 +213,7 @@
 }
 
 .slide1 {
-    background-image: url(slide_01.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(slide_01.png);
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -129,7 +222,7 @@
 }
 
 .slide2 {
-    background-image: url(slide_02.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(slide_02.png);
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -138,7 +231,7 @@
 }
 
 .slide3 {
-    background-image: url(slide_03.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(slide_03.png);
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -223,4 +316,34 @@
 
 #exampleModal {
     width: 100%;
+}
+
+.btn-info {
+    margin-top: 20px;
+}
+
+.iconFooter {
+    padding: 10px;
+    background-color: rgb(201, 192, 192);
+    border-radius: 50%;
+    color: white;
+    margin-top: 20px;
+}
+
+.my-2 {
+    margin-left: 10px;
+}
+
+.iconFb {
+    width: 140%;
+    height: 20%;
+}
+
+.h4Footer {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footerBg {
+    background-color: rgb(248, 211, 107);
 }
